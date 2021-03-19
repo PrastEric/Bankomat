@@ -1,0 +1,10 @@
+USD, Banknote, 20
+USD, Banknote, 10
+USD, Banknote, 5
+USD, Banknote, 1
+EURO, Banknote, 50
+EURO, Banknote, 20
+EURO, Banknote, 10
+EURO, Banknote, 5
+EURO, Muenze, 2
+EURO, Muenze, 1
