@@ -28,6 +28,7 @@ public class Controller {
 
     public void start(){
 
+        Logger.setLog("start");
         Fiat fiat = new Fiat();
         String r_wert = fiat.getFiat(CBX_Waehrung.getValue().toString());
         TXT_ausgabe.setText(r_wert);

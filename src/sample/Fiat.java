@@ -9,6 +9,8 @@ public class Fiat {
 
     public String getFiat(String waehrung){
 
+        Logger.setLog(waehrung);
+
         FileReader reader;
         String ausgString = "";
         String waehrungPulled = "";
