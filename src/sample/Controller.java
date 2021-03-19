@@ -29,7 +29,8 @@ public class Controller {
     public void start(){
 
         Fiat fiat = new Fiat();
-        fiat.getFiat(CBX_Waehrung.getValue().toString());
+        String r_wert = fiat.getFiat(CBX_Waehrung.getValue().toString());
+        TXT_ausgabe.setText(r_wert);
 
     }
     public void initialize() {                                                                                          //Methode für Combobox Interface
