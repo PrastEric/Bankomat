@@ -8,10 +8,9 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Button fx:id="BTN_Start" layoutX="53.0" layoutY="282.0" mnemonicParsing="false" onAction="#start" text="Start" />
+      <Button fx:id="BTN_Start" layoutX="53.0" layoutY="282.0" mnemonicParsing="false" onAction="#start" text="Start"/>
       <TextField fx:id="TXT_eing" layoutX="54.0" layoutY="200.0" promptText="TXT_eing" />
       <ComboBox fx:id="CBX_Waehrung" layoutX="53.0" layoutY="234.0" prefWidth="150.0" promptText="waehrung" />
       <TextArea fx:id="TXT_ausgabe" layoutX="17.0" layoutY="15.0" prefHeight="173.0" prefWidth="237.0" />
    </children>
 </Pane>
-

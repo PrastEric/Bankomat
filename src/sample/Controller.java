@@ -26,7 +26,7 @@ public class Controller {
     ComboBox CBX_Waehrung;
 
 
-    public void start(){
+    public void start(){                                                                                                //Satrt methode verknepft mit start button
 
         Logger.setLog("start");
         Fiat fiat = new Fiat();

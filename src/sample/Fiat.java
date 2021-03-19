@@ -1,28 +1,26 @@
 package sample;
 
 import java.io.FileReader;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Fiat {
 
 
-    public String getFiat(String waehrung){
+    public String getFiat(String waehrung){                                                                             //Methode zum holen der Fiat werte vom txt file
 
         Logger.setLog(waehrung);
 
-        FileReader reader;
+        FileReader reader;                                                                                              //Attribute zum aufteilen des files
         String ausgString = "";
         String waehrungPulled = "";
         String value = "";
         String type = "";
 
-        ArrayList<ArrayList> weiterleitung = new ArrayList<>();
         String ergString = "";
 
         try {
 
-            reader = new FileReader("src/sample/PLF02_GruppeB.txt");
+            reader = new FileReader("src/sample/PLF02_GruppeB.txt");                                          //Anlegen vom reader
 
             int fChar;
 
@@ -39,7 +37,7 @@ public class Fiat {
             e.printStackTrace();
         }
 
-        while(ausgString.length() > 0) {
+        while(ausgString.length() > 0) {                                                                                //ueberprueft ob file ende
 
             waehrungPulled = ausgString.substring(0,ausgString.indexOf(","));
             type = ausgString.substring(ausgString.indexOf(",")+2,ausgString.indexOf(","));
@@ -48,7 +46,7 @@ public class Fiat {
 
             if(waehrungPulled.equals(waehrung)) {
 
-                ergString = "Waehrung:" + waehrungPulled + " Wert:" + value +" Scheintyp:" + type;
+                ergString = "Waehrung:" + waehrungPulled + " Wert:" + value +" Scheintyp:" + type;                      //setzt attribute zusammen
 
             }
 
@@ -59,7 +57,7 @@ public class Fiat {
         }
 
         System.out.println(ergString);
-        return ergString;
+        return ergString;                                                                                               //gibt string der ausgabe zurueck
     }
 
 
